@@ -163,7 +163,6 @@ RV32Forge/
 │   ├── architecture.md
 │   └── verification.md
 │
-├── cpu.png
 ├── Makefile
 ├── LICENSE
 └── README.md
