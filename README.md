@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="cpu.png" width="82%" alt="RV32Forge CPU architecture">
+  <img src="cpu.png" width="100%" alt="RV32Forge CPU architecture">
 </p>
 
 ## Overview
@@ -72,13 +72,13 @@
 The front end uses a small dynamic predictor:
 
 <p align="center">
-  <img src="DynamicBranchPredictor.png" width="82%" alt="Dynamic Branch Predictor">
+  <img src="DynamicBranchPredictor.png" width="500" alt="Dynamic Branch Predictor">
 </p>
 
 Prediction metadata is carried down the pipeline. In EX:
 
 <p align="center">
-  <img src="EX.png" width="82%" alt="EX">
+  <img src="EX.png" width="500" alt="EX">
 </p>
 
 
@@ -89,7 +89,7 @@ This turns branch handling into a measurable microarchitectural experiment rathe
 The execute stage now selects between the integer ALU and the M-extension unit:
 
 <p align="center">
-  <img src="M-extension.png" width="82%" alt="M-extension">
+  <img src="M-extension.png" width="500" alt="M-extension">
 </p>
 
 The current divider is combinational. That makes the implementation easy to study, while deliberately exposing a realistic timing trade-off for future iterative/pipelined optimization.
