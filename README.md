@@ -265,12 +265,6 @@ That makes the repository useful for computer-architecture, FPGA, ASIC, and RISC
 - FPGA UART bootloader
 - Yosys/OpenROAD PPA study
 
-## License
-
-MIT
-
----
-
 ## Author
 
 ### Matin Firoozbakht
@@ -280,6 +274,12 @@ MIT
     github.com/matinfirooz
   </a>
 </p>
+
+## License
+
+MIT
+
+---
 
 
 <p align="center">
