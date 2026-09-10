@@ -78,7 +78,7 @@ The front end uses a small dynamic predictor:
 Prediction metadata is carried down the pipeline. In EX:
 
 <p align="center">
-  <img src="Ex.png" width="82%" alt="Ex">
+  <img src="EX.png" width="82%" alt="EX">
 </p>
 
 
