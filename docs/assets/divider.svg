@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="690" viewBox="0 0 1400 690">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1400" height="690" fill="#f6f8fc"/>
+<text x="55" y="65" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="bold" text-anchor="start" fill="#172c45">ONE QUOTIENT BIT PER CYCLE</text>
+<text x="55" y="104" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#64758b">A restoring divider shared by signed / unsigned DIV and REM</text>
+<rect x="55" y="185" width="285" height="200" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<text x="197" y="230" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#172c45">Latch request</text>
+<text x="197" y="282" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">a, b, signed, remainder</text>
+<text x="197" y="320" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Capture operands once</text>
+<path d="M 340 278 L 390 278" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="390" y="185" width="285" height="200" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<text x="532" y="230" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#172c45">Magnitude state</text>
+<text x="532" y="282" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Q: 32 bits, R: 33 bits</text>
+<text x="532" y="320" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">D: divisor, count: 6 bits</text>
+<path d="M 675 278 L 725 278" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="725" y="185" width="285" height="200" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<text x="867" y="230" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#172c45">Restoring step</text>
+<text x="867" y="282" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Shift R with Q[31]</text>
+<text x="867" y="320" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Compare R′ ≥ D; subtract</text>
+<path d="M 1010 278 L 1060 278" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1060" y="185" width="285" height="200" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<text x="1202" y="230" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" text-anchor="middle" fill="#172c45">Finish</text>
+<text x="1202" y="282" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Select quotient / remainder</text>
+<text x="1202" y="320" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Restore result sign</text>
+<path d="M 867 385 L 867 430 L 532 430 L 532 385" fill="none" stroke="#bf7217" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="700" y="466" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="middle" fill="#bf7217">32 iterations: Q ← next quotient, R ← next remainder</text>
+<rect x="55" y="515" width="625" height="110" rx="16" fill="#eaf1fc" stroke="#c4d5ef" stroke-width="2"/>
+<text x="80" y="552" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#3568bf">Early completion</text>
+<text x="80" y="588" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#33475e">b = 0 or signed MIN / −1 → defined result, no iteration</text>
+<rect x="720" y="515" width="625" height="110" rx="16" fill="#e8f5f2" stroke="#acd7cf" stroke-width="2"/>
+<text x="745" y="552" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#008f83">Handshake</text>
+<text x="745" y="588" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#33475e">start while idle → busy → one-cycle done + result</text>
+</svg>

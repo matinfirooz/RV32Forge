@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker></defs>
+<rect width="1600" height="860" fill="#f6f8fc"/>
+<text x="60" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="40" font-weight="bold" text-anchor="start" fill="#172c45">RV32FORGE</text>
+<text x="60" y="105" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#64758b">Five-stage RV32IM core · speculation, back-pressure, and ordered retirement</text>
+<rect x="60" y="140" width="245" height="105" rx="16" fill="#eaf1fc" stroke="#c4d5ef" stroke-width="2"/>
+<text x="182" y="178" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="bold" text-anchor="middle" fill="#3568bf">Branch predictor</text>
+<text x="182" y="211" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#3568bf">Tagged BTB + 2-bit BHT</text>
+<path d="M 182 245 L 182 290" fill="none" stroke="#3568bf" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 792 290 L 792 248 L 237 248 L 237 290" fill="none" stroke="#3568bf" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="485" y="234" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" text-anchor="middle" fill="#3568bf">EX recovery: direction + target</text>
+<rect x="60" y="290" width="245" height="240" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<rect x="78" y="308" width="54" height="40" rx="9" fill="#172c45" stroke="#172c45" stroke-width="2"/>
+<text x="105" y="336" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">IF</text>
+<text x="182" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172c45">Fetch</text>
+<text x="182" y="423" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">PC + next-PC mux</text>
+<text x="182" y="455" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Instruction memory</text>
+<text x="182" y="487" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Prediction metadata</text>
+<path d="M 305 401 L 365 401" fill="none" stroke="#33475e" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="335" y="387" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#64758b">IF/ID</text>
+<rect x="365" y="290" width="245" height="240" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<rect x="383" y="308" width="54" height="40" rx="9" fill="#172c45" stroke="#172c45" stroke-width="2"/>
+<text x="410" y="336" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">ID</text>
+<text x="487" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172c45">Decode</text>
+<text x="487" y="423" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Register file + bypass</text>
+<text x="487" y="455" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Immediate generation</text>
+<text x="487" y="487" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Encoding guard</text>
+<path d="M 610 401 L 670 401" fill="none" stroke="#33475e" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="640" y="387" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#64758b">ID/EX</text>
+<rect x="670" y="290" width="245" height="240" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<rect x="688" y="308" width="54" height="40" rx="9" fill="#172c45" stroke="#172c45" stroke-width="2"/>
+<text x="715" y="336" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">EX</text>
+<text x="792" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172c45">Execute</text>
+<text x="792" y="423" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">ALU + shared multiplier</text>
+<text x="792" y="455" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Iterative DIV / REM</text>
+<text x="792" y="487" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Forward + resolve branch</text>
+<path d="M 915 401 L 975 401" fill="none" stroke="#33475e" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="945" y="387" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#64758b">EX/MEM</text>
+<rect x="975" y="290" width="245" height="240" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<rect x="993" y="308" width="54" height="40" rx="9" fill="#172c45" stroke="#172c45" stroke-width="2"/>
+<text x="1020" y="336" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">MEM</text>
+<text x="1097" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172c45">Memory</text>
+<text x="1097" y="423" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Aligned word response</text>
+<text x="1097" y="455" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Byte / halfword selection</text>
+<text x="1097" y="487" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">RAM and MMIO stores</text>
+<path d="M 1220 401 L 1280 401" fill="none" stroke="#33475e" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1250" y="387" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#64758b">MEM/WB</text>
+<rect x="1280" y="290" width="245" height="240" rx="16" fill="white" stroke="#d9e1ec" stroke-width="2"/>
+<rect x="1298" y="308" width="54" height="40" rx="9" fill="#172c45" stroke="#172c45" stroke-width="2"/>
+<text x="1325" y="336" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">WB</text>
+<text x="1402" y="383" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#172c45">Retire</text>
+<text x="1402" y="423" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Register writeback</text>
+<text x="1402" y="455" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Ordered commit trace</text>
+<text x="1402" y="487" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" text-anchor="middle" fill="#33475e">Terminal marker drain</text>
+<path d="M 1402 530 L 1402 575 L 487 575 L 487 530" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 830 575 L 830 530" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1097 530 L 1097 556 L 792 556 L 792 530" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="580" y="603" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#008f83">WB → ID bypass / WB → EX forwarding</text>
+<text x="1192" y="551" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#008f83">MEM → EX</text>
+<rect x="542" y="640" width="500" height="145" rx="16" fill="#fff4e5" stroke="#ebcc9f" stroke-width="2"/>
+<text x="792" y="678" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#bf7217">Divider owns EX until completion</text>
+<text x="792" y="714" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#bf7217">Hold PC, IF/ID, and ID/EX</text>
+<text x="792" y="749" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="middle" fill="#33475e">Inject MEM bubbles; older work drains</text>
+<path d="M 792 640 L 792 613" fill="none" stroke="#bf7217" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+<rect x="1097" y="640" width="428" height="145" rx="16" fill="#e8f5f2" stroke="#acd7cf" stroke-width="2"/>
+<text x="1311" y="678" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#008f83">Observable execution</text>
+<text x="1311" y="714" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#33475e">PC · instruction · register / store effect</text>
+<text x="1311" y="749" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" text-anchor="middle" fill="#33475e">Cycles · retired · stalls · predictions</text>
+<path d="M 1402 612 L 1402 640" fill="none" stroke="#008f83" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="60" y="690" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#172c45">Memory contract</text>
+<text x="60" y="725" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#33475e">Separate instruction and data ports</text>
+<text x="60" y="758" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#33475e">Combinational reads, synchronous stores</text>
+<text x="60" y="823" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#64758b">Default: iterative divider + dynamic prediction. Parameters expose matched comparison configurations.</text>
+</svg>
