@@ -1,0 +1,14 @@
+/build/
+__pycache__/
+*.py[cod]
+*.vcd
+*.fst
+*.vvp
+*.o
+.venv/
+rv32forge_sim
+rv32m_sim
+branch_sim
+
+# Keep the captured execution example in the repository.
+!examples/*.vcd

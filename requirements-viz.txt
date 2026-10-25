@@ -1,0 +1,2 @@
+# Optional; the assembler, reference model and regression use only the standard library.
+matplotlib>=3.6
