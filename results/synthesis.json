@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "tool": "Yosys 0.33 (git sha1 2584903a060)",
+  "top": "rv32_core",
+  "bp_entries": 64,
+  "method": "Yosys synth -flatten; default ABC generic mapping; all core outputs retained",
+  "exclusions": "Simulation RAM/MMIO wrapper excluded. No library mapping, STA, placement, routing, area or power claim.",
+  "records": [
+    {
+      "configuration": "iterative_divider",
+      "generic_cells": 38409,
+      "flip_flops": 6407,
+      "cell_types": {
+        "$_ANDNOT_": 13647,
+        "$_AND_": 1071,
+        "$_DFFE_PN0N_": 405,
+        "$_DFFE_PN0P_": 5918,
+        "$_DFFE_PN1N_": 1,
+        "$_DFFE_PN1P_": 71,
+        "$_DFF_PN0_": 11,
+        "$_DFF_PN1_": 1,
+        "$_MUX_": 1357,
+        "$_NAND_": 534,
+        "$_NOR_": 716,
+        "$_NOT_": 842,
+        "$_ORNOT_": 866,
+        "$_OR_": 9520,
+        "$_XNOR_": 816,
+        "$_XOR_": 2633
+      }
+    },
+    {
+      "configuration": "combinational_divider",
+      "generic_cells": 54124,
+      "flip_flops": 6236,
+      "cell_types": {
+        "$_ANDNOT_": 19447,
+        "$_AND_": 809,
+        "$_DFFE_PN0N_": 406,
+        "$_DFFE_PN0P_": 5747,
+        "$_DFFE_PN1N_": 1,
+        "$_DFFE_PN1P_": 71,
+        "$_DFF_PN0_": 10,
+        "$_DFF_PN1_": 1,
+        "$_MUX_": 3351,
+        "$_NAND_": 760,
+        "$_NOR_": 2579,
+        "$_NOT_": 1909,
+        "$_ORNOT_": 1283,
+        "$_OR_": 11392,
+        "$_XNOR_": 2119,
+        "$_XOR_": 4239
+      }
+    }
+  ]
+}

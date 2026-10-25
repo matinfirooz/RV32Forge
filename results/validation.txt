@@ -1,0 +1,30 @@
+RV32Forge 2.0 validation
+Date: 2026-10-25
+Host C golden models: PASS (GCC -std=c11 -O2 -Wall -Wextra -Werror)
+Python unittest: PASS (19 test methods)
+Original pipeline, RV32M, branch and MMIO demos: PASS
+Differential regression: PASS (111 runs, 13863 matched events)
+Divider vectors: PASS (2048); combinational RV32M vectors: PASS (4096)
+Predictor unit, MMIO counters/subword lanes, in-flight reset: PASS
+In-bench counter agreement, store-count agreement and no activity after halt: PASS
+Verilator 5.020 lint: PASS (both ITERATIVE_DIV configurations)
+Lint allowances: DECLFILENAME (legacy filenames), UNUSEDSIGNAL (intentionally unused instruction/product bits)
+Yosys 0.33 generic synthesis and check -assert: PASS (both configurations)
+Markdown local targets: PASS; generated SVGs rendered and visually inspected
+No technology-mapped timing, physical area, power, or energy result is claimed.
+
+Commands:
+  make test
+  make lint
+  make synth
+
+Core RTL SHA-256:
+  e9e29254eeafe457b7ae5ba49e15c6b260d30f7edec94cd2e6f08db2a9fe4c94  rtl/alu.sv
+  96a153365d607842d5b005af3cc0beeac64b9ac61b1eb78a93ecbe305558d01f  rtl/branch_predictor.sv
+  10218c609f1e60025f0a6b03c553a6d1129779c1d9fba0cf965c2f1d30383a58  rtl/decode_guard.sv
+  af546036c268c88a79ad7a5fea15fdb6b24b017059395f56c4b22e0bc246e4b6  rtl/divider.sv
+  b679bbcc809758c0570af59dafc690dbc0d9633b33cab0d5d304a47402cf54b3  rtl/imm_gen.sv
+  cfeb720326e4b64f645df774980b755c54c372e0c23d52e084f4e66fd9dfa006  rtl/muldiv_unit.sv
+  6156a04aafda0283566885c2dbf231b99c40ce2a36603bb6073b6079de791dfe  rtl/regfile.sv
+  d88eab63396d3bda95469c95d5436c4bbb6b9f96d1c82b29bbd5cfc9e42a581e  rtl/rv32_core.sv
+  d6e5003200915ad3f6c28de12dd0cf6b4fd52b018ca69c1119ebb8917e6577b2  rtl/rv32_soc.sv
